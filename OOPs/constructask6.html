@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegetables Class</title>
+    <script>
+        class Vegetables {
+            constructor() {
+                this.vegetableName = '';
+                this.vitamins = {};
+            }
+
+            // Function to read vegetable's name
+            vegName() {
+                this.vegetableName = prompt('Enter the vegetable name:');
+            }
+
+            // Function to read vitamins and display vegetable's name and corresponding vitamins
+            vitamins() {
+                const numOfVitamins = parseInt(prompt(`Enter the number of vitamins for ${this.vegetableName}:`), 10);
+
+                for (let i = 0; i < numOfVitamins; i++) {
+                    const vitaminName = prompt(`Enter vitamin ${i + 1} name:`);
+                    const vitaminValue = prompt(`Enter vitamin ${i + 1} value:`);
+
+                    this.vitamins[vitaminName] = vitaminValue;
+                }
+
+                // Display vegetable's name and corresponding vitamins
+                console.log(`Vegetable: ${this.vegetableName}`);
+                console.log('Vitamins:');
+                for (const vitamin in this.vitamins) {
+                    console.log(`${vitamin}: ${this.vitamins[vitamin]}`);
+                }
+            }
+        }
+
+        // Example Usage
+        const vegetableInstance = new Vegetables();
+        vegetableInstance.vegName();
+        vegetableInstance.vitamins();
+    </script>
+</head>
+<body>
+    <!-- Your HTML content here -->
+</body>
+</html>

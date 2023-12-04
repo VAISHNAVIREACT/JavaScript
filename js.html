@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+    <script>
+        /*  // ADDITION
+          let a = 15; 
+          let b = 10; 
+  
+          a += b; 
+          console.log("Sum of the given number is :", a);
+          // document.write(a)
+  
+          // SUBTRACTION
+          let q =5;
+          let v =2;
+          console.log(q-v);
+          
+          // MULTIPLICATION
+          console.log(q*v);
+          // DIVISION
+          console.log(q/v);
+  
+          // MODULES
+  
+          console.log(q%v);
+  
+          // < OR >
+          console.log(q<v);
+          // DOM
+  const num1 = parseInt(prompt('Enter the first number '));
+  const num2 = parseInt(prompt('Enter the second number '));
+  const sum = num1 + num2;
+  console.log(`The sum of ${num1} and ${num2} is ${sum}`);
+  */
+
+        // CALCULATOR
+
+        const x = parseInt(prompt('Enter the first number:'));
+        const y = parseInt(prompt('Enter the second number:'));
+        const operator = prompt('Enter operator (either +, -, * or /): ');
+
+        let result;
+        
+
+        if (operator === '+') {
+            result = x + y;
+        } else if (operator === '-') {
+            result = x - y;
+        } else if (operator === '*') {
+            result = x * y;
+        } else if (operator === '/') {
+            result = x / y;
+        } else {
+            console.log('Invalid operator');
+        }
+
+        console.log(`${x} ${operator} ${y} = ${result}`);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

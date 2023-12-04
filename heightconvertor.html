@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height Converter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+            background-color: black;
+            color: white;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-size: 100%;
+        }
+
+        b {
+            color: white;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="a">Height Converter</h1>
+    <br>
+    <br><br>
+    <form id="b">
+        <label for="feet">Feet:</label>
+        <input type="number" id="feet" placeholder="Feet" min="0" step="1">
+        <br>
+        <br>
+        <label for="inches ">Inches:</label>
+        <input type="number" id="inches" placeholder="Inches" min="0" step="1">
+        <br><br>
+        <button id="but" onclick="convertHeight()">Convert to cm</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        function convertHeight() {
+
+            var feet = parseFloat(document.getElementById("feet").value) || 0;
+            var inches = parseFloat(document.getElementById("inches").value) || 0;
+
+
+            var totalInches = feet * 12 + inches;
+            var centimeters = totalInches * 2.54;
+
+            var resultElement = document.getElementById("result");
+            resultElement.textContent = "Height in centimeters: " + centimeters.toFixed(2) + " cm";
+        }
+    </script>
+
+</body>
+
+</html>

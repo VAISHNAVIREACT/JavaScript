@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STONE PAPER SCISSOR</title>
+
+    <script>let choices = ["stone", "paper", "scissor"];
+        let rounds = 10;
+        let userScore = 0;
+        let systemScore = 0;
+
+        while (rounds > 0) {
+            console.log("user score:", userScore);
+            console.log("system score:", systemScore);
+
+            let userChoice = prompt("Enter your choice:");
+            let systemChoice = choices[Math.floor(Math.random() * choices.length)];
+
+            console.log("user selected:", userChoice);
+            console.log("system selected:", systemChoice);
+
+            if (systemChoice === userChoice) {
+                console.log("It's a draw");
+            } else if (
+                (userChoice === "stone" && systemChoice === "paper") ||
+                (userChoice === "paper" && systemChoice === "stone") ||
+                (userChoice === "stone" && systemChoice === "scissor") ||
+                (userChoice === "scissor" && systemChoice === "stone") ||
+                (userChoice === "scissor" && systemChoice === "paper") ||
+                (userChoice === "paper" && systemChoice === "scissor")
+            ) {
+                console.log("user wins the round");
+                userScore += 1;
+            } else {
+                console.log("system wins the round");
+                systemScore += 1;
+            }
+
+            rounds -= 1;
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

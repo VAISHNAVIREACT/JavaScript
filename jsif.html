@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if </title>
+
+    <script>
+        // Write a program to check if a given number is a multiple of 5.
+
+        /*const a=parseInt(prompt('Enter the number:'));
+         if(a%5==0){
+            console.log('The given number is a multiple of 5.')
+        
+         }
+         else{
+            console.log('not multiple of 5')
+         }*/
+        //Write a program to give a discount of 10% if the total bill amount exceeds 1000.
+        
+function calculateDiscount(totalAmount) {
+  
+  if (totalAmount > 1000) {
+   
+    var discount = 0.1 * totalAmount;
+
+   
+    var discountedAmount = totalAmount - discount;
+
+    
+    return discountedAmount;
+  } else {
+   
+    return totalAmount;
+  }
+}
+
+
+var totalBill = 1200; 
+
+var finalAmount = calculateDiscount(totalBill);
+
+
+console.log("Total Bill: $" + totalBill.toFixed(2));
+console.log("Final Amount after Discount: $" + finalAmount.toFixed(2));
+
+
+//  Minimum age to Cast your Vote : 18  Minimum age to Contest an Election: 25.
+//   Given the age verify if the person can vote and can s(he) contest an election.
+
+
+//  Write a program to check if a given year is leap year or not.
+
+// Program to print month corresponding to their month value ie. 1 -- jan
+// Program to read a character and print corresponding VIBGYOR colors to it. otherwise print "Invalid"
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

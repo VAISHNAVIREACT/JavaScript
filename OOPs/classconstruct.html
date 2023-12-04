@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1]Create a Student class and initialize it with name and roll number. Make methods to :</title>
+</head>
+
+<body>
+    <!-- Display - It should display all informations of the student.
+        setAge - It should assign age to student
+       setMarks - It should assign marks to the student. -->
+    <script>
+        class Student {
+            constructor(name, roll_number) {
+                this.name = name;
+                this.roll_number = roll_number;
+                this.age = 0;
+                this.mark = 0;
+            }
+
+            setAge(age) {
+                this.age = age;
+
+            }
+            setMark(mark) {
+                this.mark = mark;
+            }
+        }
+        const student1 = new Student('Vaishnavi', "2");
+        console.log("All information of the student");
+        console.log('Name:',student1.name);
+        console.log('Roll number:',student1.roll_number);
+        
+        student1.setAge(23);
+        student1.setMark(45);
+
+        console.log('Age:',student1.age);
+        console.log('Mark:',student1.mark);
+
+    </script>
+</body>
+
+</html>

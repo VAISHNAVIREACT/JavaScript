@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3]Program to Create a Class and Compute the Area of the Circle</title>
+</head>
+
+<body>
+    <script>
+        const pi = Math.PI;
+        class Area {
+            constructor(radius) {
+                this.radius = radius;
+            }
+            areaofCircle() {
+                result = pi * this.radius * this.radius;
+                return result;
+            }
+        }
+        const Circlearea = new Area(4);
+        const result = Circlearea.areaofCircle();
+        console.log("Area of the circle is:", result);
+    </script>
+</body>
+
+</html>

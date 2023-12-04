@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5]Create a class Area with following functions
+
+        circle - Calculate the area of circle
+        triangle - Calculate the area of triangle
+        rectangle - Calculate the area of rectangle
+        cube - Calculate the area of cube</title>
+</head>
+
+<body>
+    <!-- <script>
+        const pi = Math.PI;
+
+        class Area {
+            constructor() {
+                this.radius = 0;
+                this.length = 0;
+                this.width = 0;
+                this.height = 0;
+                this.base = 0;
+                this.side = 0;
+                this.result = 0;
+            }
+
+            setCircleRadius(radius) {
+                this.radius = radius;
+            }
+
+            setRectangleDimensions(length, width) {
+                this.length = length;
+                this.width = width;
+            }
+
+            setTriangleBaseAndHeight(base, height) {
+                this.base = base;
+                this.height = height;
+            }
+
+            setCubeSideLength(side) {
+                this.side = side;
+            }
+
+            get areaOfCircle() {
+                this.result = pi * this.radius * this.radius;
+                return this.result;
+            }
+
+            get areaOfRectangle() {
+                this.result = this.length * this.width;
+                return this.result;
+            }
+
+            get areaOfTriangle() {
+                this.result = (1 / 2) * this.base * this.height;
+                return this.result;
+            }
+
+            get volumeOfCube() {
+                this.result = this.side * this.side * this.side;
+                return this.result;
+            }
+        }
+
+        const areaCalculator = new Area();
+
+        areaCalculator.setCircleRadius(5);
+        console.log("Area of Circle:", areaCalculator.areaOfCircle);
+
+        areaCalculator.setRectangleDimensions(4, 6);
+        console.log("Area of Rectangle:", areaCalculator.areaOfRectangle);
+
+        areaCalculator.setTriangleBaseAndHeight(3, 8);
+        console.log("Area of Triangle:", areaCalculator.areaOfTriangle);
+
+        areaCalculator.setCubeSideLength(2);
+        console.log("Volume of Cube:", areaCalculator.volumeOfCube);
+    </script> -->
+    
+
+    <script>
+        const pi =Math.PI
+        class Area {
+            constructor(r,l,w,b,s,h){
+                this.r = r;
+                this.l = l;
+                this.w= w;
+                this.b = b;
+                this.s= s;
+                this.h = h;
+            }
+            AreaofTriangle(){
+               const result= this.b*this.h;
+                return result;
+            }
+            AreaofRectangle(){
+               const result= (1 / 2) * this.base * this.height;
+                return result;
+            }
+            AreaofCircle(){
+               const result = pi * this.radius * this.radius;
+                return result
+            }
+            volumeOfCube() {
+               const result = this.side * this.side * this.side;
+                return result;
+            }
+        }
+        const objArea=new Area(4,5,6,5,4,8);
+        const resultTriangle= objArea.AreaofTriangle();
+        console.log('Area of Triangle:',resultTriangle);
+        const resultRectangle= objArea.AreaofRectangle();
+        console.log('Area of Rectangle:',resultRectangle);
+        const resultCircle=objArea.AreaofCircle();
+        console.log('Area of Circle:',resultCircle);
+        const resultCube=objArea.volumeOfCube();
+        console.log('Area of Circle:',resultCube);
+
+        
+    </script>
+</body>
+
+</html>

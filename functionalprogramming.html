@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functional Programmings </title>
+</head>
+
+<body>
+    <script>
+        // 1)console the elements in countries to uppercase using ForeEach()
+        const countries = ['Albania', 'Canada', 'Denmark', 'Finland', 'Germany', 'Ireland', 'Japan']
+        countries.forEach(function (country) {
+            console.log(country.toUpperCase());
+        });
+
+
+        // <script>
+        //2) print the first three letter using map()
+        // const filteredCountries = countries.map(country => country.slice(0, 3));
+        // console.log(filteredCountries);
+
+        // // 3)filter the countries countaining land
+        const filteredCountries = countries.filter(country => {
+            return country.toLowerCase().includes("land");
+        });
+
+        console.log(filteredCountries);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // find: return the first element which satisfies the conditions
+        // a)Name length greater than 5
+
+        const names = ['Elias', 'Mathews', 'Reeja', 'John'];
+
+        for (let i = 0; i < names.length; i++) {
+            if (names[i].length > 5) {
+                console.log(names[i]);
+            }
+        }
+
+        // sort the elements
+
+        names.sort();
+        console.log(names);
+
+        // Name length greater than 5 using find()
+        const found = names.find((number) => number > 5);
+
+        console.log(found);
+    </script>
+</body>
+
+</html>

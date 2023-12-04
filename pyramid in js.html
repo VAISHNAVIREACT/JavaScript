@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyramid using Functions</title>
+
+    <script>
+        function pyramid(n) {
+            for (let i = 1; i <= n; i++) {
+                let str = '';
+                let count = 1;
+                for (let j = 1; j <= 2 * n; j++) {
+                    if (i + j >= n + 1 && (i >= j - n + 1)) {7
+                        str += count.toString() + ' ';
+                        count++;
+                    }
+                    else {
+                        str += '  ';
+                    }
+                }
+                console.log(str);
+            }
+            
+        }
+        let n = 5;
+        pyramid(n);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

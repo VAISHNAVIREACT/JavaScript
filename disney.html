@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <style>
+
+.dropdown-btn {
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+      .carousel img {
+        transition: transform 0.3s ease-in-out;
+      }
+      .carousel img:hover {
+         transform: scale(1.1); 
+      }
+      .card-container {
+        display: flex;
+        justify-content: space-between;
+      }
+    
+      
+      .card {
+        position: relative;
+        width: 200px;
+        height: 300px; 
+        overflow: hidden; 
+        margin-right: 10px; 
+      }
+    
+      .card img {
+        width: 100%; 
+        height: auto; 
+        transition: transform 0.3s ease-in-out; 
+      }
+    
+    
+      .card:hover img {
+        transform: scale(1.1); 
+      }
+      .nav-link {
+        font-weight: bolder;
+      }
+    </style>
+</head>
+<body>
+    <div>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="https://www.disney.in/" aria-label="Disney.in"><img src="./images/disneylogo.png" alt="" style="height: 34px; width: 79px; margin: -19px -3px; position: absolute;"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div style="margin: 1px 404px ;">
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">                                                                                                  
+                    <div class="navbar-nav">
+                      <a class="nav-link active" aria-current="page" href="#" style="margin: -1px -839px; position: absolute;">SHOP</a>
+                      <a class="nav-link active" aria-current="page" href="#" style="margin: -1px -752px; position: absolute;">PARKS</a>
+                      <a class="nav-link active" aria-current="page" href="#" style="margin: -1px -661px; position: absolute;">WHAT'S NEW</a>
+                      <a class="nav-link active" aria-current="page" href="#">DISNEY 100</a>
+                    </div>
+                  </div>
+                </div>
+
+              </nav>
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/mickyyy.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/juniorindia.jpeg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/dis1.png" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+              <div class="image-container">
+              <div class="card-group" >
+                <div class="card" style="margin: 15px 3px; position: absolute; ">
+                  <img src="./images/cart1.jpeg" class="card-img-top" alt="image 1" class="a" style="white-space: 5px; height: 384px; width: 313px;">
+                </div>
+                
+                <div class="card" style="margin:15px 341px; position: absolute; ">
+                  <img src="./images/cart2.jpeg" class="card-img-top" alt="image 2" style="white-space: 6px; height: 384px; width: 313px;">
+              
+                </div>
+                <div class="card" style="margin:15px 676px; position: absolute;">
+                  <img src="./images/cart3.jpeg" class="card-img-top" alt="image 3" style="white-space: 6px; height: 384px; width: 313px;">
+                  
+                </div>
+
+
+                <p style="margin: 413px 60px ; font-size: 37px; position: absolute;">Featured Ads</p>
+                <div class="card" style="margin: 15px 1017px; position: absolute;" >
+                    <img src="./images/cart4.jpeg" class="card-img-top" alt="image 4" style="white-space: 6px; height: 384px; width: 313px;">
+                  </div>
+              </div>
+            </div>
+            </div>
+           <div>
+            <div class="card text-bg-dark" style="width: 600px; height: 310px; margin: 490px 54px; position: absolute;">
+              <img src="./images/spi3.png" class="card-img" alt="..."  style="height: 310px ; width: 600px; margin: 0px 0px;">
+              </div>
+              <div class="card text-bg-dark" style="width: 600px; height: 310px; margin: 489px 670px; position: absolute;">
+                <img src="./images/spider.jpeg" class="card-img" alt="..."  style="height: 310px ; width: 600px; ">
+                <p>When new foes threaten the city, a new web-slinger arises as Spider-Man.<br>
+                Marvel's Spider-Man:Miles Morales has arrived on PlayStation 4 and Play</p>
+                
+              </div>
+            </div>
+            <div style=" background-color: lightgrey; margin: 401px -2px; height: 2013px; width: 1461px;">
+            <div style=" color: black; font-size: 190%; margin: 528px 75px; position: absolute;">Explore Disney Holidays
+          
+            </div>
+            <img src="./images/disney1.jpeg" alt="" style="margin: 590px 73px; height: 420px; width: 420px;">
+            <div>
+              <h1 style="font-size: 136%; margin:-563px 185px ; position: absolute;">Legends of the Force</h1>
+              <h2 style="font-weight: bold; font-size: 88%; margin:-525px 146px; position: absolute;">DISCOVER NOW AT DISNEYLAND PARIS</h2>
+            </div>
+            
+            <img src="./images/disney2.jpeg" alt="" style="margin: -1010px 549px; position: absolute; height: 420px; width: 420px;">
+            <div>
+              <h1 style="font-size: 136%; margin:-564px 622px; position: absolute;">14 Days Ticket at a 7 Day Price</h1>
+              <h2 style="font-weight: bold; font-size: 88%; margin:-525px 620px; position: absolute;">BOOK WITH WALT DISNEY WORLD</h2>
+            </div>
+           <img src="./images/disney3.jpeg" alt="" style="margin: -1010px 1026px; position: absolute; height: 420px; width: 420px;">
+           <DIV>
+            <h1 style="font-size: 136%; margin:-564px 1122px; position: absolute;">Find Your Perfect Holiday</h1>
+            <h2 style="font-weight: bold; font-size: 88%; margin:-525px 1127px; position: absolute;">BOOK WITH DISNEY CRUISE LINE</h2>
+           </DIV>
+
+           <div>
+            <P style="font-size: 162%; margin: -391px 73px;">More From Disney</P>
+            <img src="./images/mickky.png" alt="" style="margin: 416px 713px; height: 420px; width: 560px;">
+          
+            <img src="./images/teddy.png" alt="" style="margin: -834px 53px; position: absolute; height: 420px; width: 560px;">
+            <p style="margin: -400px 88px; font-size: 150%;position: absolute;">Disney Junior Birthday Book</p>
+            <p style="margin: -354px 87px; position: absolute;">Make your kids birthday even more special by creating your own personalized birthday <br> video for child.</p>
+            <p style="margin: -277px 91px; font-weight: bold; font-size: 12px; position: absolute;">DISNEY JUNIOR</p>
+            <p style="margin: -404px 753px; font-size: 170%; position: absolute;">Happy Anniversary Mickey</p>
+            <p style="margin:-198px 461px;position: absolute;">It all started with a mouse. We're celebrating 90 years of the true Original.</p>
+            <h1 style="margin: -117PX 100PX; font-size: 12px; font-weight: bold;">DISNEY</h1>
+           </div>
+          </div>
+
+
+          <div style="margin: 100px 100px; height: 500px;width: 200px; position: absolute;">
+            <img src="./images/disneylogo.png" alt="" style="margin: -467px -72px; position:absolute; height: 48px; width: 103px;">
+            <h1 style="margin: -452px 59px; position: absolute; font-size: 15px; font-weight: bold;" >SHOP</h1>
+            <h1 style="margin: -452px 151px; position: absolute; font-size: 15px; font-weight: bold;">PARKS</h1>
+            <h1 style="margin: -452px 277px; position: absolute; font-size: 15px; font-weight: bold;">WHAT'S NEW</h1>
+            <h1 style="margin: -452px 409px; position: absolute; font-size: 15px; font-weight: bold;">DISNEY 100</h1>
+            <img src="./images/disneylogo.png" alt="" style="margin: -348px 554px; position:absolute; height: 48px; width: 103px;">
+            <img src="./images/twittt.png" alt="" style="height: 35px; width: 35px; margin: -450px 1027px ;position: absolute;">
+            <img src="./images/fb.png" alt="" style="height: 35px; width: 35px; margin: -450px 1083px; position: absolute;">
+            <img src="./images/insta.png" alt="" style="height: 26px; width: 26px; margin: -447px 1141px; position: absolute;">
+            <img src="./images/ytub.png" alt="" style="height: 35px; width: 35px; margin: -450px 1205px; position: absolute;">
+          </div>
+
+          <p style="margin: -104px 7px; position: absolute;">About</p>
+          <p style="margin: -104px 75px; position: absolute;">Careers</p>
+          <p style="margin: -104px 145px; position: absolute;">Internet Safety</p>
+          <p style="margin: -104px 270px; position: absolute;">Terms of Use</p>
+          <p style="margin: -104px 378px; position: absolute;">Privacy Policy</p>
+          <p style="margin: -104px 497px; position: absolute;">DMCA Notices</p>
+          <p style="margin: -104px 627px; position: absolute;">Supplemental Terms of Use</p>
+          <p style="margin: -104px 837px; position: absolute;">Addendum to Privacy Policy - for India</p>
+          <p style="margin: -104px 923px; position: absolute;">Contest Terms and Conditions</p>
+          <p style="margin: -104px 1037px; position: absolute;">Channel</p>
+          <p style="margin: -104px 1148px; position: absolute;">Distribution Interest-Based Ads</p>
+          <p style="margin: 6px 292px; position: absolute;">© Disney © Disney•Pixar © & ™ Lucasfilm LTD © Marvel. All Rights Reserved</p>
+
+          <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dropdown Menu</title>
+
+    </div>
+</body>
+</html>
+

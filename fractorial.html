@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial</title>
+
+    <script>
+        function factorial(n) {
+            let fact = 1;
+            if (n == 0 || n == 1) {
+                return fact;
+            }
+            else if (n > 1) {
+
+                for(var i=n; i>=1; i--) {
+                    fact = fact * i;
+                }
+                return fact;
+            }
+            else {
+                return "Number has to be positive"
+            }
+
+        }
+        let n= (5)
+        fact=factorial(n)
+        console.log("Factorial of " + n + " : " + fact)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

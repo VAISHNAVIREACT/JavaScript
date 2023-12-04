@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color:white
+        }
+        
+
+        #calc {
+            border: 3px solid black;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #display {
+            width: 100%;
+            box-sizing: border-box;
+            padding: 10px;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .btn {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            font-size: 16px;
+            cursor: pointer; 
+            background-color: black;
+        }
+        .btn:hover {
+            transform: scale(0.9);
+            color: crimson;
+        }
+        button#AC {
+            background-color:firebrick
+        }
+        button#op {
+            color: green;
+            background-color: black;
+        }
+        button#eq {
+            background-color: green;
+        }
+        button#num {
+            color: white;
+        }
+        
+    </style>
+</head>
+<body>
+    <!-- <h1 id="head">Calculator</h1> -->
+    <div class="Calculator-container" id="calc">
+        <form id="calculator-form" action="#">
+            <input type="text" id="display" placeholder="0"><br><br>
+            
+            <button type="button" class="btn" id="AC">AC</button>
+            <button type="button" class="btn" id="op">+</button>
+            <button type="button" class="btn" id="op">-</button>
+            <button type="button" class="btn" id="op">*</button>
+            <button type="button" class="btn" id="op">%</button><br><br>
+            
+            <button type="button" class="btn" id="num">1</button>
+            <button type="button" class="btn" id="num">2</button>
+            <button type="button" class="btn" id="num">3</button>
+            <button type="button" class="btn" id="num">4</button>
+            <button type="button" class="btn" id="op">/</button><br><br>
+            
+            <button type="button" class="btn" id="num">5</button>
+            <button type="button" class="btn" id="num">6</button>
+            <button type="button" class="btn" id="num">7</button>
+            <button type="button" class="btn" id="num">8</button>
+            <button type="button" class="btn" id="op">^</button><br><br>
+            
+            <button type="button" class="btn" id="num">9</button>
+            <button type="button" class="btn" id="num">0</button>
+            <button type="button" class="btn" id="num">.</button>
+            <button type="button" class="btn" id="num">c</button>
+            <button type="button" class="btn" id="eq">=</button>
+        </form>
+    </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+    
+        var display = document.getElementById("display");
+        var buttons = document.querySelectorAll(".btn");
+
+        buttons.forEach(function (button) {
+            button.addEventListener("click", function () {
+                var buttonValue = this.innerText;
+                if (buttonValue === "AC") {
+                    display.value = "";
+                } else if (buttonValue === "=") {
+                    try {
+                        display.value = eval(display.value);
+                    } catch (error) {
+                        display.value = "Error";
+                    }
+                } else {
+
+                    display.value += buttonValue;
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
+
+</body>
+</html>

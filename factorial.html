@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>factorial</title>
+
+    <script>
+        const x = parseInt(prompt('Enter a positive integer: '));
+
+        if (x < 0) {
+            console.log('Factorial for a negative number does not exist.');
+        } else if (x === 0) {
+            console.log(`The factorial of ${x} is 1.`);
+        } else {
+            let fact = 1;
+            for (let i = 1; i < 10; i++) {
+                fact *= i;
+            }
+            console.log(`The factorial of ${x} is ${fact}.`);
+        }
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

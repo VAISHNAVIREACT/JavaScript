@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        class BasicCalculator {
+            constructor() {
+                this.result = 0;
+            }
+
+            add(number) {
+                this.result += number;
+                return this;
+            }
+
+            subtract(number) {
+                this.result -= number;
+                return this;
+            }
+
+            multiply(number) {
+                this.result *= number;
+                return this;
+            }
+
+            divide(number) {
+                if (number !== 0) {
+                    this.result /= number;
+                } else {
+                    console.error("Cannot divide by zero");
+                }
+                return this;
+            }
+
+            getResult() {
+                return this.result;
+            }
+
+            reset() {
+                this.result = 0;
+                return this;
+            }
+        }
+
+        // Example usage:
+        const calculator = new BasicCalculator();
+
+        // Perform calculations
+        const result = calculator.add(5).multiply(2).divide(3).subtract(1).getResult();
+
+        console.log("Result:", result); // Output: Result: 3.3333333333333335
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write a JavaScript program to calculate multiplication and division of two numbers (input from the user).
+    </title>
+    <script>
+        function mul() {
+            var a, b, Mul, Div;
+            a = parseInt(prompt('Enter the first number:'))
+            b = parseInt(prompt('Enter the second number:'))
+            Mul = a * b; //Multiplication of two numbers
+            Div = a / b; //Division of two numbers
+            //To print the result
+            document.getElementById("mul").innerHTML = "Multiplication of " + a + "*" + b + "= " + Mul;
+            document.getElementById("div").innerHTML = "Division of " + a + "/" + b + "= " + Div;
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

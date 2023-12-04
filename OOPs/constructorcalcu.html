@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2]Program to Create a Class which Performs Basic Calculator Operations.</title>
+</head>
+<body>
+    <script>
+        class Calculator{
+            constructor(){
+                this.result=0;
+            }
+            add(number){
+                this.result += number;
+                return this;
+            }
+            subtract(number){
+                this.result -=number;
+                return this;
+            }
+            division(number){
+                if (number !==0){
+                    this.result /= number;
+                }
+                else{
+                    console.error('Division not possible');
+                }
+                
+            }
+            multiplication(number){
+                this.result *= number;
+                return this;
+            }
+            modules(number){
+                this.result %=number;
+                return this;
+            }
+            getResult(){
+                return this.result;
+            }
+            reset(){
+                this.result=0;
+                return this;
+
+            }
+            
+        }
+        const calcu= new Calculator();
+        const result = calcu.add(4).add(5).getResult()
+        console.log("Result =",result);
+    </script>
+    
+</body>
+</html>

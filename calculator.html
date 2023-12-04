@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="#" method="post" id="calculatorForm" onsubmit="return calculate();">
+
+
+            <label for="firstNumber">Enter the first number:</label>
+            <input type="text" id="firstNumber" name="firstNumber" placeholder="Enter the first number" required><br>
+
+            <label for="secondNumber">Enter the second number:</label>
+            <input type="text" id="secondNumber" name="secondNumber" placeholder="Enter the second number" required><br>
+
+            <label for="operator">Enter the operator:</label>
+            <input type="text" id="operator" name="operator" placeholder="Enter the operator" required><br>
+
+            <input type="submit" value="Calculate">
+        </form>
+    </div>
+    <script>
+        function calculate() {
+            var firstNumber = parseFloat(document.getElementById('firstNumber').value);
+            var secondNumber = parseFloat(document.getElementById('secondNumber').value);
+            var operator = document.getElementById('operator').value;
+
+            var result;
+
+            switch (operator) {
+                case '+':
+                    result = firstNumber + secondNumber;
+                    break;
+                case '-':
+                    result = firstNumber - secondNumber;
+                    break;
+                case '*':
+                    result = firstNumber * secondNumber;
+                    break;
+                case '/':
+                    result = firstNumber / secondNumber;
+                    break;
+                case '%':
+                    result = firstNumber % secondNumber; 
+                    break;
+                case '^': 
+                    result = firstNumber ^ secondNumber;
+                    break;     
+                default:
+                    result = 'Invalid operator';
+            }
+
+
+            console.log(result);
+
+
+            return false;
+        }
+    </script>
+
+</body>
+
+</html>
